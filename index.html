@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request a hotel room</title>
+    <style type="text/css">
+    @import "https://fonts.googleapis.com/css?family=Lato:400,600,700&subset=latin-ext";
+
+body {
+  background: #ececec;
+  font-family: 'Lato';
+  padding: 10px 0;
+  margin: 0;
+  font-size: 14px;
+  overflow-x: hidden;
+  min-width: 345px;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Personal data</legend>
+        <div class="double-input">
+			<div class="form-input-container">
+				<label for="fname">First name</label>
+	        	<input type="text" id="fname" placeholder="John" minlenght="3" required>
+			</div>
+			<div class="form-input-container">
+				<label for="lname">Last name</label>
+	        	<input type="text" id="lname" placeholder="Smith" minlenght="3" required>
+			</div>
+        </div>
+        <div class="double-input">
+        	<div class="form-input-container">
+        		<label for="email">E-mail</label>
+	        	<input type="email" id="email" placeholder="E-mai" minlenght="3" required>
+        	</div>
+        	<div class="form-input-container">
+        		<label for="phone">Phone</label>
+	        	<input type="tel" id="phone" placeholder="eg. 321456987" required>
+        	</div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Room details</legend>
+        <div class="double-input">
+        	<div class="form-input-container"></div>
+        	<div class="form-input-container"></div>
+        </div>
+        <div class="double-input">
+        	<div class="form-input-container"></div>
+        	<div class="form-input-container"></div>
+        </div>
+    </fieldset>
+    <button type="submit">Submit a request</button>
+</form>
+</body>
+</html>
